@@ -15,4 +15,5 @@ test('test', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Password' }).fill('vardhan');
   await page.getByRole('button', { name: 'Sign in', exact: true }).click();
   await expect(page.getByRole('alert')).toContainText('Incorrect username or password.');
+  console.log('success')
 });
